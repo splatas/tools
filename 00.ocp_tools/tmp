@@ -1,0 +1,4 @@
+NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                               AGE
+modelmesh-serving   ClusterIP   None            <none>        8033/TCP,8008/TCP,8443/TCP,2112/TCP   5h4m
+sso                 ClusterIP   172.30.32.230   <none>        8443/TCP                              5h1m
+sso-ping            ClusterIP   None            <none>        8888/TCP                              5h1m
