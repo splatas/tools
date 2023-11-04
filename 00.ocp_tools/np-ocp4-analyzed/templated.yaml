@@ -1,0 +1,2050 @@
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cheque-book-management-pre-sit-networks-to-accountops-pre-sit
+    namespace: accountops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cheque-book-management-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-enquiry-pre-sit-networks-to-accountops-pre-sit
+    namespace: accountops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: enquiry-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-finance-service-pre-sit-networks-to-accounts-service-pre-sit
+    namespace: accounts-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: finance-service-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-dev-networks-to-banking-charges-dev
+    namespace: banking-charges-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-pre-sit-networks-to-banking-charges-pre-sit
+    namespace: banking-charges-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-sit-networks-to-banking-charges-sit
+    namespace: banking-charges-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-uat-networks-to-banking-charges-uat
+    namespace: banking-charges-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-dev-networks-to-bms-dev
+    namespace: bms-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-accountops-pre-sit-networks-to-bms-pre-sit
+    namespace: bms-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: accountops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-pre-sit-networks-to-bms-pre-sit
+    namespace: bms-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-sit-networks-to-bms-sit
+    namespace: bms-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-uat-networks-to-bms-uat
+    namespace: bms-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-dev-networks-to-campaign-dev
+    namespace: campaign-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-pre-sit-networks-to-campaign-pre-sit
+    namespace: campaign-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-sit-networks-to-campaign-sit
+    namespace: campaign-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-covered-card-pre-sit-networks-to-cardops-pre-sit
+    namespace: cardops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: covered-card-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-enquiry-pre-sit-networks-to-cardops-pre-sit
+    namespace: cardops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: enquiry-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cardops-pre-sit-networks-to-cards-service-pre-sit
+    namespace: cards-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cardops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-dev-networks-to-cds-dev
+    namespace: cds-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-accountops-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: accountops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-accounts-service-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: accounts-service-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-advance-salary-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-bms-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: bms-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-campaign-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: campaign-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cardops-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cardops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cards-service-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cards-service-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cheque-book-management-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cheque-book-management-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-compliance-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: compliance-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-covered-card-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: covered-card-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-finance-service-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: finance-service-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-financeops-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: financeops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-pre-sit-networks-to-cds-pre-sit
+    namespace: cds-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-sit-networks-to-cds-sit
+    namespace: cds-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-cds-uat
+    namespace: cds-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-uat-networks-to-cds-uat
+    namespace: cds-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cheque-book-management-pre-sit-networks-to-compliance-pre-sit
+    namespace: compliance-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cheque-book-management-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-enquiry-pre-sit-networks-to-compliance-pre-sit
+    namespace: compliance-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: enquiry-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-covered-card-pre-sit-networks-to-covered-card-pre-sit
+    namespace: covered-card-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: covered-card-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-dev-networks-to-cpr-dev
+    namespace: cpr-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-sit-networks-to-cpr-sit
+    namespace: cpr-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cpr-pre-sit-networks-to-customer-segment-pre-sit
+    namespace: customer-segment-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cpr-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-advance-salary-pre-sit-networks-to-deviceops-pre-sit
+    namespace: deviceops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-bms-pre-sit-networks-to-deviceops-pre-sit
+    namespace: deviceops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: bms-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cardops-pre-sit-networks-to-deviceops-pre-sit
+    namespace: deviceops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cardops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-deviceops-uat
+    namespace: deviceops-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-dev-networks-to-file-upload-dev
+    namespace: file-upload-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-advance-salary-pre-sit-networks-to-file-upload-pre-sit
+    namespace: file-upload-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cedm-pre-sit-networks-to-file-upload-pre-sit
+    namespace: file-upload-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cedm-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cheque-book-management-pre-sit-networks-to-file-upload-pre-sit
+    namespace: file-upload-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cheque-book-management-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-covered-card-pre-sit-networks-to-file-upload-pre-sit
+    namespace: file-upload-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: covered-card-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cpr-pre-sit-networks-to-file-upload-pre-sit
+    namespace: file-upload-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cpr-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-finance-service-pre-sit-networks-to-file-upload-pre-sit
+    namespace: file-upload-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: finance-service-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-financeops-pre-sit-networks-to-file-upload-pre-sit
+    namespace: file-upload-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: financeops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-sit-networks-to-file-upload-sit
+    namespace: file-upload-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-file-upload-uat
+    namespace: file-upload-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-uat-networks-to-file-upload-uat
+    namespace: file-upload-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-advance-salary-pre-sit-networks-to-finance-service-pre-sit
+    namespace: finance-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-covered-card-pre-sit-networks-to-finance-service-pre-sit
+    namespace: finance-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: covered-card-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-finance-service-uat
+    namespace: finance-service-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-ebc-onboarding-pre-sit-networks-to-geny-accounts-service-pre-sit
+    namespace: geny-accounts-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: ebc-onboarding-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-ebc-onboarding-pre-sit-networks-to-geny-cards-service-pre-sit
+    namespace: geny-cards-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: ebc-onboarding-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-ebc-onboarding-pre-sit-networks-to-geny-fidor-service-pre-sit
+    namespace: geny-fidor-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: ebc-onboarding-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-dev-networks-to-kyc-dev
+    namespace: kyc-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-advance-salary-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-campaign-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: campaign-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cardops-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cardops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cedm-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cedm-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cheque-book-management-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cheque-book-management-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-compliance-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: compliance-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-covered-card-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: covered-card-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-ebc-onboarding-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: ebc-onboarding-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-finance-service-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: finance-service-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-financeops-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: financeops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-pre-sit-networks-to-kyc-pre-sit
+    namespace: kyc-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-kyc-uat
+    namespace: kyc-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-uat-networks-to-kyc-uat
+    namespace: kyc-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-advance-salary-pre-sit-networks-to-mdm-pre-sit
+    namespace: mdm-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-finance-service-pre-sit-networks-to-mdm-pre-sit
+    namespace: mdm-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: finance-service-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-financeops-pre-sit-networks-to-mdm-pre-sit
+    namespace: mdm-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: financeops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-mdm-uat
+    namespace: mdm-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-dev-networks-to-otps-dev
+    namespace: otps-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-advance-salary-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-bms-scheduler-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: bms-scheduler-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cardops-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cardops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cardops-scheduler-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cardops-scheduler-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cedm-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cedm-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cheque-book-management-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cheque-book-management-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-compliance-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: compliance-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-covered-card-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: covered-card-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cpr-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cpr-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-customer-segment-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: customer-segment-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-deviceops-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: deviceops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-ebc-onboarding-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: ebc-onboarding-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-enquiry-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: enquiry-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-financeops-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: financeops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-pre-sit-networks-to-otps-pre-sit
+    namespace: otps-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-sit-networks-to-otps-sit
+    namespace: otps-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-otps-uat
+    namespace: otps-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-uat-networks-to-otps-uat
+    namespace: otps-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-deviceops-pre-sit-networks-to-party-service-pre-sit
+    namespace: party-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: deviceops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-ebc-onboarding-pre-sit-networks-to-party-service-pre-sit
+    namespace: party-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: ebc-onboarding-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-dev-networks-to-partyops-dev
+    namespace: partyops-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-accountops-pre-sit-networks-to-partyops-pre-sit
+    namespace: partyops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: accountops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cardops-pre-sit-networks-to-partyops-pre-sit
+    namespace: partyops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cardops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cheque-book-management-pre-sit-networks-to-partyops-pre-sit
+    namespace: partyops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cheque-book-management-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cpr-pre-sit-networks-to-partyops-pre-sit
+    namespace: partyops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cpr-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-enquiry-pre-sit-networks-to-partyops-pre-sit
+    namespace: partyops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: enquiry-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-financeops-pre-sit-networks-to-partyops-pre-sit
+    namespace: partyops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: financeops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-pre-sit-networks-to-partyops-pre-sit
+    namespace: partyops-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-sit-networks-to-partyops-sit
+    namespace: partyops-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-uat-networks-to-partyops-uat
+    namespace: partyops-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-dev-networks-to-payments-scheduler-dev
+    namespace: payments-scheduler-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-pre-sit-networks-to-payments-scheduler-pre-sit
+    namespace: payments-scheduler-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-sit-networks-to-payments-scheduler-sit
+    namespace: payments-scheduler-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-uat-networks-to-payments-scheduler-uat
+    namespace: payments-scheduler-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-dev-networks-to-tms-dev
+    namespace: tms-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-dev
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cpr-pre-sit-networks-to-tms-pre-sit
+    namespace: tms-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cpr-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-pre-sit-networks-to-tms-pre-sit
+    namespace: tms-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-sit-networks-to-tms-sit
+    namespace: tms-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-fund-transfer-uat-networks-to-tms-uat
+    namespace: tms-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: fund-transfer-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-campaign-pre-sit-networks-to-transaction-logging-pre-sit
+    namespace: transaction-logging-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: campaign-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cedm-pre-sit-networks-to-uaepass-integration-pre-sit
+    namespace: uaepass-integration-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cedm-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-accountops-pre-sit-networks-to-utility-service-pre-sit
+    namespace: utility-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: accountops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-certificate-pre-sit-networks-to-utility-service-pre-sit
+    namespace: utility-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: certificate-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-cheque-book-management-pre-sit-networks-to-utility-service-pre-sit
+    namespace: utility-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: cheque-book-management-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-enquiry-pre-sit-networks-to-utility-service-pre-sit
+    namespace: utility-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: enquiry-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-financeops-pre-sit-networks-to-utility-service-pre-sit
+    namespace: utility-service-pre-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: financeops-pre-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress

@@ -1,0 +1,86 @@
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-finance-to-utility
+    namespace: auth-utility-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: finance-service-dev
+            project: myproject
+      - podSelector:
+          matchLabels:
+            role: somerole
+      ports:
+      - port: 6379
+        protocol: TCP
+    podSelector:
+      matchLabels:
+        role: db
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-finance-to-utility
+    namespace: auth-utility-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: finance-service-sit
+            project: myproject
+      - podSelector:
+          matchLabels:
+            role: somerole
+      ports:
+      - port: 6379
+        protocol: TCP
+    podSelector:
+      matchLabels:
+        role: db
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-icsservice
+    namespace: onboarding-sit
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            project: icservice-sit
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    labels:
+      template: networkpolicy
+    name: allow-from-os-adib-insights-uat-networks-to-redis-uat
+    namespace: redis-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector: {}
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-cvc
+    namespace: utility-service-dev
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector: {}
+    podSelector: {}
+    policyTypes:
+    - Ingress

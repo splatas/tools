@@ -1,0 +1,2119 @@
+accountops:
+  auth-utility:
+  - pre-sit
+  banking-charges:
+  - sit
+  bms:
+  - sit2
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cardops:
+  - pre-sit
+  cds:
+  - sit2
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - dev
+  partyops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  payments2:
+  - sit
+  - sit2
+  - dev
+  - uat
+  redis:
+  - uat
+  subscription:
+  - sit
+  - dev
+  utility-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+accounts-service:
+  bms:
+  - sit2
+  - dev
+  - sit3
+  cards-service:
+  - sit2
+  cds:
+  - sit2
+  - test
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  payments-service:
+  - sit2
+  - dev
+  - sit3
+advance-salary:
+  cds:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  deviceops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  file-upload:
+  - sit
+  - pre-sit
+  - uat
+  finance-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc-remediation:
+  - dev
+  mdm:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+audit-service:
+  cds:
+  - sit
+  - dev
+  redis:
+  - uat
+auth-utility:
+  cds:
+  - sit
+  - dev
+  redis:
+  - uat
+banking-charges:
+  accountops:
+  - sit
+  - dev
+  cds:
+  - sit
+  - dev
+bms:
+  cds:
+  - sit2
+  - test
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  deviceops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat
+bms-scheduler:
+  cds:
+  - sit
+  - sit2
+  - dev
+  otps:
+  - sit2
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat
+bulk-kyc-update:
+  cds:
+  - uat
+  file-upload:
+  - uat
+  kyc:
+  - uat
+  otps:
+  - uat
+campaign:
+  cds:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat
+  transaction-logging:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+cardops:
+  cards-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  deviceops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  partyops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  push-notification:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+cardops-scheduler:
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+cards-service:
+  cds:
+  - sit2
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  geny-courier-service:
+  - sit
+  - dev
+  geny-fidor-service:
+  - sit
+  - dev
+  kyc:
+  - sit
+  otps:
+  - dev
+cds:
+  accountops:
+  - dev
+  cds:
+  - sit2
+  payments2:
+  - sit2
+  redis:
+  - uat
+  tms:
+  - dev
+cds-scheduler:
+  cds:
+  - sit
+  - dev
+  redis:
+  - uat
+cedm:
+  cds:
+  - sit
+  - dev
+  file-upload:
+  - sit
+  - pre-sit
+  - uat
+  kyc:
+  - sit
+  - pre-sit
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - uat
+  uaepass-integration:
+  - sit
+  - pre-sit
+  - uat
+certificate:
+  cds:
+  - sit
+  - dev
+  utility-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+cheque-book-management:
+  accountops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  compliance:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  file-upload:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  party-service:
+  - sit
+  - dev
+  - uat
+  partyops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  utility-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+compliance:
+  cards-service:
+  - sit
+  - dev
+  - uat
+  cds:
+  - sit2
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit2
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+covered-card:
+  cardops:
+  - sit
+  - sit2
+  - pre-sit
+  - uat
+  cards-service:
+  - sit
+  - dev
+  - sit3
+  - uat
+  cds:
+  - sit2
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  covered-card:
+  - pre-sit
+  file-upload:
+  - sit2
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  finance-facade:
+  - dev
+  finance-service:
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit2
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat
+cpr:
+  cds:
+  - sit
+  - dev
+  customer-segment:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  file-upload:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  partyops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat
+  tms:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+customer-segment:
+  campaign:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cpr:
+  - sit
+  - dev
+  file-upload:
+  - sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  partyops:
+  - sit
+  - dev
+dashboard:
+  cds:
+  - sit
+  - dev
+  redis:
+  - uat
+default:
+  accountops:
+  - sit2
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  accounts-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  advance-salary:
+  - ''
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  ansiable-demo:
+  - ''
+  appdynamics:
+  - ''
+  audit-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  auditlogs-shipper:
+  - ''
+  auth-utility:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  banking-charges:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  bms:
+  - sit2
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  bms-scheduler:
+  - sit2
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  browserops:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  bulk-kyc-update:
+  - uat
+  cached-data:
+  - uat
+  campaign:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  canary:
+  - uat
+  card-ops-scheduler:
+  - pre-sit
+  - mr
+  cardops:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cardops-scheduler:
+  - sit
+  - mr
+  - dev
+  - uat
+  cards-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cds:
+  - sit2
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cds-scheduler:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cedm:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  certificate:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cheque-book-management:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  compliance:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  configmap-example:
+  - ''
+  configmapx:
+  - ''
+  contrast:
+  - rnd
+  covered-card:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  covered-cards-cash-relay:
+  - sit
+  - mr
+  - pre-sit
+  - dev
+  cpr:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  customer-segment:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  dashboard:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  deviceops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  deviceops-scheduler:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  devops-contrast-utility:
+  - sit
+  digital-wallet:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  directory:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  directory-service:
+  - sit
+  - pre-sit
+  document:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  dts-license:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  ebc-onboarding:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  enquiry:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  enquiry-configmap:
+  - test
+  feedback-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  file-upload:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  fileupload-devops:
+  - dev
+  finance-facade:
+  - sit
+  - pre-sit
+  - dev
+  finance-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  financeops:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  fms:
+  - mr
+  fund-transfer:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  geny-accounts-service:
+  - ''
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  geny-audit:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  geny-cards-service:
+  - sit
+  - pre-sit
+  - uat
+  geny-cds:
+  - ''
+  - sit
+  - dev
+  geny-cds-sit:
+  - pre-sit
+  geny-courier-service:
+  - ''
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  geny-face-app:
+  - ''
+  geny-fidor-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  geny-fileupload:
+  - sit
+  geny-gc-face:
+  - ''
+  - uat
+  geny-nboard-backend:
+  - sit
+  - uat
+  geny-onb:
+  - ''
+  geny-onboarding:
+  - sit
+  - uat
+  geny-otps:
+  - sit
+  geny-party-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  geny-personal-finance:
+  - sit
+  - mr
+  - dev
+  - uat
+  genz:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  genz-notification:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  goal-management:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  hello-ocp:
+  - ''
+  ibprod-build:
+  - ''
+  icc-integration:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  ics:
+  - mr
+  - pre-sit
+  - dev
+  - uat
+  icservice:
+  - sit
+  imagepull:
+  - ''
+  internet-banking:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  ipo:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  java-template-edit:
+  - ''
+  kyc:
+  - sit-v2
+  - pre-sit
+  - dev
+  - uat
+  kyc-ab:
+  - sit
+  kyc-remediation:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc-service:
+  - mr
+  lune-integration:
+  - sit
+  - mr
+  - pre-sit
+  - dev
+  mdm:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  mdm-dev-v2:
+  - ''
+  mdm-devops:
+  - dev
+  mscronjob:
+  - sit
+  - dev
+  - uat
+  nfc-license:
+  - sit
+  - dev
+  - uat
+  non-individual-kyc-remediation:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  non-resident-compliance:
+  - sit
+  - mr
+  - dev
+  - uat
+  non-resident-kyc-remediation:
+  - sit
+  - mr
+  - pre-sit
+  - dev
+  non-uae-banking:
+  - sit
+  - mr
+  - dev
+  - uat
+  oauth:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  onb-scheduler:
+  - sit
+  - mr
+  - dev
+  - uat
+  onboarding:
+  - ''
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  onboarding-v2:
+  - sit
+  - mr
+  - dev
+  - uat
+  oneclick-accounts-service:
+  - ''
+  oneclick-bms:
+  - ''
+  oneclick-pf:
+  - ''
+  oneclick-pms:
+  - ''
+  operational:
+  - pre-sit
+  operational-service:
+  - sit
+  - dev
+  - uat
+  os-adib-insights:
+  - sit
+  - mr
+  - dev
+  - uat
+  osadibinsights:
+  - uat
+  otps:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  party-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  partyops:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  payment2:
+  - uat
+  payments:
+  - pre-sit
+  payments-scheduler:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  payments-service:
+  - uat1
+  - mr
+  - sit
+  - sit1
+  - dev
+  - uat
+  payments-service-mdi-487:
+  - ''
+  payments2:
+  - sit2
+  - mr
+  - sit
+  - dev
+  - uat
+  personal-finance-topup:
+  - sit
+  - mr
+  - dev
+  - uat
+  pf:
+  - mr
+  - sit-v2
+  - dev
+  - uat
+  pin:
+  - sit
+  - mr
+  - dev
+  - uat
+  pms:
+  - sit
+  - mr
+  - dev
+  - uat
+  pms-scheduler:
+  - sit
+  - mr
+  - dev
+  - uat
+  pullimage:
+  - uat
+  push-notification:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat1
+  - uat
+  reem:
+  - ''
+  referral-management:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  rib-revamp:
+  - sit
+  - dev
+  singleclickjira:
+  - uat
+  sms-console:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  spring-auto-scale-sample:
+  - ''
+  statistics-service:
+  - uat
+  statisticsweb:
+  - uat
+  subscription:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  tms:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  transaction-logging:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  transaction-logging-listener:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  twistlock:
+  - ''
+  uaepass-integration:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  utility-service:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  wps-integration:
+  - mr
+  - sit
+  - pre-sit
+  - dev
+  - uat
+deviceops:
+  cds:
+  - sit
+  - dev
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  party-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat
+deviceops-scheduler:
+  cds:
+  - sit
+  - dev
+  redis:
+  - uat
+digital-wallet:
+  cds:
+  - sit2
+  redis:
+  - uat
+directory:
+  cds:
+  - sit
+  - dev
+directory-service:
+  cds:
+  - sit
+  - dev
+ebc-onboarding:
+  accounts-service:
+  - dev
+  cards-service:
+  - dev
+  geny-accounts-service:
+  - sit
+  - pre-sit
+  - uat
+  geny-cards-service:
+  - sit
+  - pre-sit
+  - uat
+  geny-fidor-service:
+  - sit
+  - pre-sit
+  - uat
+  kyc:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  party-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+enquiry:
+  accountops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  accounts-service:
+  - sit
+  - dev
+  cardops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cards-service:
+  - dev
+  cds:
+  - sit
+  - dev
+  - sit3
+  compliance:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - dev
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  party-service:
+  - sit
+  - dev
+  partyops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat
+  utility-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+finance-facade:
+  cds:
+  - dev
+  covered-card:
+  - dev
+  kyc:
+  - sit
+  - dev
+finance-service:
+  accounts-service:
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  cds:
+  - sit2
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  file-upload:
+  - sit2
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - sit2
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  mdm:
+  - sit2
+  - sit
+  - sit3
+  - pre-sit
+  - dev
+  - uat
+  partyops:
+  - sit
+  - dev
+  redis:
+  - uat
+  utility-service:
+  - sit
+  - sit2
+  - sit3
+  - uat
+financeops:
+  accountops:
+  - sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  file-upload:
+  - sit
+  - pre-sit
+  - dev
+  kyc:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  mdm:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  partyops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  redis:
+  - uat
+  utility-service:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+fund-transfer:
+  banking-charges:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  bms:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  kyc:
+  - pre-sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  partyops:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  payments-scheduler:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+  tms:
+  - sit
+  - pre-sit
+  - dev
+  - uat
+geny-accounts-service:
+  cds:
+  - sit
+  - uat
+geny-cards-service:
+  cds:
+  - sit
+  - uat
+  geny-fidor-service:
+  - sit
+  - uat
+  redis:
+  - uat
+geny-courier-service:
+  file-upload:
+  - sit
+  - dev
+  - uat
+geny-onboarding:
+  accounts-service:
+  - sit
+  cards-service:
+  - sit
+  cds:
+  - sit
+  - uat
+  compliance:
+  - sit
+  - uat
+  file-upload:
+  - sit
+  - uat
+  geny-accounts-service:
+  - sit
+  - uat
+  geny-cards-service:
+  - sit
+  - uat
+  ics:
+  - uat
+  icservice:
+  - sit
+  kyc:
+  - sit
+  - uat
+  oauth:
+  - sit
+  - uat
+  otps:
+  - sit
+  - dev
+  - uat
+  pin:
+  - sit
+  - uat
+geny-party-service:
+  geny-fidor-service:
+  - sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - dev
+  - uat
+geny-personal-finance:
+  cds:
+  - dev
+  finance-service:
+  - dev
+  kyc:
+  - dev
+  mdm:
+  - dev
+  pf:
+  - dev
+genz:
+  accountops:
+  - sit
+  - dev
+  - uat
+  accounts-service:
+  - sit
+  cds:
+  - sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - dev
+  - uat
+  oauth:
+  - sit
+  - dev
+  - uat
+  onboarding:
+  - sit
+  - dev
+  party-service:
+  - sit
+  partyops:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+  referral-management:
+  - sit
+  - dev
+  - uat
+  utility-service:
+  - sit
+  - uat
+genz-notification:
+  cds:
+  - sit
+  - dev
+  kyc:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+genz-notification-:
+  kyc:
+  - uat
+  redis:
+  - uat
+goal-management:
+  accountops:
+  - sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - dev
+  payments2:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+icc-integration:
+  tms:
+  - sit
+  - dev
+  - uat
+ics:
+  cds:
+  - dev
+  file-upload:
+  - dev
+  - uat
+  onboarding-v2:
+  - dev
+  otps:
+  - uat
+  partyops:
+  - dev
+  - uat
+  redis:
+  - uat
+icservice:
+  cds:
+  - sit
+  file-upload:
+  - sit
+  onboarding-v2:
+  - sit
+  otps:
+  - sit
+  partyops:
+  - sit
+ipo:
+  cds:
+  - sit
+  - dev
+  otps:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+kyc:
+  cards-service:
+  - sit2
+  - sit-v2
+  - sit3
+  - dev
+  - uat
+  cds:
+  - sit2
+  - sit-v2
+  - sit3
+  - dev
+  - uat
+  compliance:
+  - sit2
+  - sit-v2
+  - sit3
+  - dev
+  - uat
+  enquiry:
+  - sit-v2
+  - dev
+  file-upload:
+  - sit2
+  - sit-v2
+  - sit3
+  - dev
+  - uat
+  kyc:
+  - sit-v2
+  mdm:
+  - sit2
+  - sit-v2
+  - sit
+  - sit3
+  - dev
+  - uat
+  oauth:
+  - sit
+  - dev
+  otps:
+  - sit-v2
+  - dev
+  - uat
+  party-service:
+  - sit2
+  - sit-v2
+  - sit3
+  - dev
+  - uat
+  redis:
+  - uat
+  subscription:
+  - sit-v2
+  - dev
+kyc-ab:
+  cds:
+  - sit
+  compliance:
+  - sit
+  file-upload:
+  - sit
+  mdm:
+  - sit
+  party-service:
+  - sit
+kyc-devops-ocp:
+  mdm:
+  - rnd
+kyc-remediation:
+  cards-service:
+  - sit
+  - sit2
+  - dev
+  - uat
+  cds:
+  - sit2
+  - sit
+  - sit3
+  - dev
+  - uat
+  compliance:
+  - sit
+  - sit2
+  - dev
+  - uat
+  file-upload:
+  - sit
+  - sit2
+  - dev
+  - uat
+  kyc:
+  - sit
+  - sit2
+  - dev
+  - uat
+  mdm:
+  - sit2
+  - sit
+  - sit3
+  - dev
+  - uat
+  otps:
+  - sit
+  - dev
+  - uat
+  party-service:
+  - sit
+  - sit2
+  - dev
+  - uat
+lune-integration:
+  accountops:
+  - sit
+  - dev
+  cds:
+  - sit
+  - dev
+non-individual-kyc-remediation:
+  compliance:
+  - sit
+  - dev
+  - uat
+  party-service:
+  - sit
+  - dev
+  - uat
+non-resident-compliance:
+  cards-service:
+  - sit
+  - dev
+  kyc:
+  - sit
+  - dev
+  non-resident-kyc-remediation:
+  - sit
+  - dev
+  otps:
+  - sit
+  - dev
+  push-notification:
+  - sit
+  - dev
+non-resident-kyc-remediation:
+  compliance:
+  - sit
+  - dev
+  file-upload:
+  - sit
+  - dev
+  kyc:
+  - sit
+  - dev
+  non-resident-compliance:
+  - sit
+  - dev
+non-uae-banking:
+  cds:
+  - sit
+  - dev
+oauth:
+  kyc:
+  - sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - dev
+  - uat
+onb-scheduler:
+  otps:
+  - sit
+  - dev
+  - uat
+onboarding:
+  accounts-service:
+  - sit
+  - sit2
+  - dev
+  - uat
+  cards-service:
+  - sit
+  - sit2
+  - dev
+  - uat
+  cds:
+  - sit
+  - sit2
+  - dev
+  - uat
+  compliance:
+  - sit
+  - sit2
+  - dev
+  - uat
+  enquiry:
+  - sit
+  - dev
+  - uat
+  file-upload:
+  - sit
+  - dev
+  - uat
+  genz:
+  - sit
+  - dev
+  - uat
+  ics:
+  - dev
+  - uat
+  icservice:
+  - sit
+  - sit2
+  kyc:
+  - sit
+  - sit2
+  - dev
+  - uat
+  oauth:
+  - sit
+  - sit2
+  - dev
+  - uat
+  otps:
+  - sit
+  - sit2
+  - dev
+  - uat
+  pin:
+  - sit
+  - sit2
+  - dev
+  - uat
+  redis:
+  - uat
+  utility-service:
+  - sit
+  - dev
+  - uat
+onboarding-v2:
+  accountops:
+  - sit
+  - dev
+  cards-service:
+  - sit
+  - dev
+  cds:
+  - sit
+  - dev
+  compliance:
+  - sit
+  - dev
+  file-upload:
+  - sit
+  - dev
+  - uat
+  ics:
+  - dev
+  icservice:
+  - sit
+  kyc:
+  - sit
+  - dev
+  - uat
+  oauth:
+  - sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - dev
+  - uat
+  pin:
+  - sit
+  - dev
+  uaepass-integration:
+  - sit
+  - dev
+  - uat
+  utility-service:
+  - sit
+  - dev
+operational-service:
+  file-upload:
+  - sit
+  - dev
+  - uat
+os-adib-insights:
+  cds:
+  - sit
+  - dev
+osadibinsights:
+  cds:
+  - sit
+  - dev
+party-service:
+  cds:
+  - sit2
+  - sit
+  - sit3
+  - dev
+  - uat
+  kube-system:
+  - dev
+  kyc:
+  - sit2
+  - sit
+  - sit3
+  - dev
+  - uat
+  redis:
+  - uat
+partyops:
+  accountops:
+  - sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+payments-scheduler:
+  cds:
+  - sit
+  - dev
+  otps:
+  - sit
+  - dev
+  - uat
+  payments2:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+  tms:
+  - sit
+  - dev
+  - uat
+payments-service:
+  bms:
+  - sit2
+  - sit3
+  - sit1
+  - dev
+  - uat
+  cds:
+  - sit2
+  - sit
+  - sit3
+  - dev
+  - uat
+  otps:
+  - sit
+  redis:
+  - uat
+payments2:
+  banking-charges:
+  - sit
+  - dev
+  bms:
+  - sit
+  - sit2
+  - dev
+  - uat
+  cds:
+  - sit
+  - sit2
+  - dev
+  - uat
+  kyc:
+  - sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - uat
+  partyops:
+  - sit
+  - dev
+  - uat
+  payments-scheduler:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+  tms:
+  - sit
+  - dev
+  - uat
+  transaction-logging:
+  - sit
+  - dev
+  - uat
+personal-finance-topup:
+  cds:
+  - sit
+  - dev
+  - uat
+  deviceops:
+  - sit
+  - dev
+  - uat
+  enquiry:
+  - sit
+  - dev
+  - uat
+  file-upload:
+  - sit
+  - dev
+  - uat
+  finance-service:
+  - sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - dev
+  - uat
+  mdm:
+  - sit
+  - dev
+  - uat
+  otps:
+  - sit
+  - dev
+  - uat
+  utility-service:
+  - sit
+  - dev
+  - uat
+pf:
+  cds:
+  - sit2
+  - sit-v2
+  - dev
+  - uat
+  deviceops:
+  - sit2
+  - sit-v2
+  - dev
+  - uat
+  file-upload:
+  - sit2
+  - sit-v2
+  - sit
+  - dev
+  - uat
+  finance-service:
+  - sit2
+  - sit-v2
+  - dev
+  - uat
+  kyc:
+  - sit2
+  - sit-v2
+  - sit
+  - dev
+  - uat
+  mdm:
+  - sit2
+  - sit-v2
+  - sit
+  - dev
+  - uat
+  otps:
+  - sit-v2
+  - dev
+  - uat
+  pin:
+  - dev
+  utility-service:
+  - sit2
+  - sit-v2
+  - sit
+  - dev
+  - uat
+pms:
+  cds:
+  - sit
+  - dev
+  redis:
+  - uat
+pms-scheduler:
+  cds:
+  - sit
+  - dev
+  redis:
+  - uat
+product-management-scheduler:
+  cds:
+  - dev
+push-notification:
+  cds:
+  - sit
+  - dev
+  otps:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+  tms:
+  - sit
+  - dev
+  - uat
+redis:
+  redis:
+  - uat1
+  - uat
+referral-management:
+  cds:
+  - sit
+  - dev
+  genz:
+  - sit
+  kyc:
+  - uat
+  redis:
+  - uat
+statisticsweb:
+  statistics-service:
+  - uat
+subscription:
+  accountops:
+  - sit
+  - dev
+  - uat
+  cardops:
+  - sit
+  - dev
+  - uat
+  cards-service:
+  - sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - dev
+  kyc:
+  - sit
+  - dev
+  - uat
+tms:
+  cds:
+  - sit
+  - dev
+  redis:
+  - uat
+transaction-logging:
+  accountops:
+  - sit
+  - dev
+  - uat
+  bms:
+  - sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - dev
+  - uat
+  kyc:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+transaction-logging-listener:
+  bms:
+  - sit
+  - dev
+  - uat
+  cds:
+  - sit
+  - dev
+  - uat
+  redis:
+  - uat
+uaepass-integration:
+  cds:
+  - sit
+  - dev
+  - uat
+  file-upload:
+  - sit
+  - dev
+  - uat
+utility-service:
+  financeops:
+  - sit
+  - dev
+  utility-service:
+  - sit

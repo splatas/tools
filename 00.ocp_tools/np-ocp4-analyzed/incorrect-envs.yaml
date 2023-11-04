@@ -1,0 +1,15 @@
+- from: payments-service-mdi-487
+  from_env: false
+  name: allow-payments-service-mdi-487
+  to: bms-dev
+  to_env: dev
+- from: test
+  from_env: false
+  name: allow-from-test-namespace
+  to: cds-dev
+  to_env: dev
+- from: payments-service-mdi-487
+  from_env: false
+  name: allow-payments-service-mdi-487
+  to: cds-dev
+  to_env: dev

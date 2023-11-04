@@ -1,0 +1,98 @@
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-cds-uat
+    namespace: cds-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-deviceops-uat
+    namespace: deviceops-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-file-upload-uat
+    namespace: file-upload-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-finance-service-uat
+    namespace: finance-service-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-kyc-uat
+    namespace: kyc-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-mdm-uat
+    namespace: mdm-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress
+- apiVersion: networking.k8s.io/v1
+  kind: NetworkPolicy
+  metadata:
+    name: allow-from-advance-salary-networks-to-otps-uat
+    namespace: otps-uat
+  spec:
+    ingress:
+    - from:
+      - namespaceSelector:
+          matchLabels:
+            name: advance-salary-uat
+    podSelector: {}
+    policyTypes:
+    - Ingress

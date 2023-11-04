@@ -1,0 +1,607 @@
+---
+accountops:
+- bms
+- cds
+- partyops
+- utility-service
+- auth-utility
+- banking-charges
+- cardops
+- kyc
+- payments2
+- redis
+- subscription
+accounts-service:
+- cds
+- bms
+- cards-service
+- payments-service
+advance-salary:
+- cds
+- deviceops
+- file-upload
+- finance-service
+- kyc
+- mdm
+- otps
+- kyc-remediation
+audit-service:
+- cds
+- redis
+auth-utility:
+- cds
+- redis
+banking-charges:
+- accountops
+- cds
+bms:
+- cds
+- deviceops
+- redis
+bms-scheduler:
+- otps
+- cds
+- redis
+bulk-kyc-update:
+- cds
+- file-upload
+- kyc
+- otps
+campaign:
+- cds
+- kyc
+- transaction-logging
+- redis
+cardops:
+- cards-service
+- cds
+- deviceops
+- kyc
+- otps
+- partyops
+- push-notification
+- redis
+cardops-scheduler:
+- otps
+cards-service:
+- cds
+- geny-courier-service
+- geny-fidor-service
+- kyc
+- otps
+cds:
+- accountops
+- cds
+- payments2
+- redis
+- tms
+cds-scheduler:
+- cds
+- redis
+cedm:
+- file-upload
+- kyc
+- otps
+- uaepass-integration
+- cds
+certificate:
+- utility-service
+- cds
+cheque-book-management:
+- accountops
+- cds
+- compliance
+- file-upload
+- kyc
+- otps
+- partyops
+- utility-service
+- party-service
+compliance:
+- cds
+- kyc
+- otps
+- cards-service
+covered-card:
+- cardops
+- cds
+- covered-card
+- file-upload
+- finance-service
+- kyc
+- otps
+- cards-service
+- finance-facade
+- redis
+cpr:
+- customer-segment
+- file-upload
+- otps
+- partyops
+- tms
+- cds
+- redis
+customer-segment:
+- campaign
+- cds
+- cpr
+- file-upload
+- kyc
+- otps
+- partyops
+dashboard:
+- cds
+- redis
+default:
+- accountops
+- accounts-service
+- advance-salary
+- ansiable-demo
+- appdynamics
+- audit-service
+- auditlogs-shipper
+- auth-utility
+- banking-charges
+- bms
+- bms-scheduler
+- browserops
+- bulk-kyc-update
+- cached-data
+- campaign
+- canary
+- card-ops-scheduler
+- cardops
+- cardops-scheduler
+- cards-service
+- cds
+- cds-scheduler
+- cedm
+- certificate
+- cheque-book-management
+- compliance
+- configmap-example
+- configmapx
+- contrast
+- covered-card
+- covered-cards-cash-relay
+- cpr
+- customer-segment
+- dashboard
+- deviceops
+- deviceops-scheduler
+- devops-contrast-utility
+- digital-wallet
+- directory
+- directory-service
+- document
+- dts-license
+- ebc-onboarding
+- enquiry-configmap
+- enquiry
+- feedback-service
+- file-upload
+- fileupload-devops
+- finance-facade
+- finance-service
+- financeops
+- fms
+- fund-transfer
+- geny-accounts-service
+- geny-audit
+- geny-cards-service
+- geny-cds
+- geny-cds-sit
+- geny-courier-service
+- geny-face-app
+- geny-fidor-service
+- geny-fileupload
+- geny-gc-face
+- geny-nboard-backend
+- geny-onb
+- geny-onboarding
+- geny-otps
+- geny-party-service
+- geny-personal-finance
+- genz
+- genz-notification
+- goal-management
+- hello-ocp
+- ibprod-build
+- icc-integration
+- ics
+- icservice
+- imagepull
+- internet-banking
+- ipo
+- java-template-edit
+- kyc-ab
+- kyc
+- kyc-remediation
+- kyc-service
+- lune-integration
+- mdm-dev-v2
+- mdm
+- mdm-devops
+- mscronjob
+- nfc-license
+- non-individual-kyc-remediation
+- non-resident-compliance
+- non-resident-kyc-remediation
+- non-uae-banking
+- oauth
+- onb-scheduler
+- onboarding
+- onboarding-v2
+- oneclick-accounts-service
+- oneclick-bms
+- oneclick-pf
+- oneclick-pms
+- operational
+- operational-service
+- os-adib-insights
+- osadibinsights
+- otps
+- party-service
+- partyops
+- payment2
+- payments
+- payments-scheduler
+- payments-service
+- payments-service-mdi-487
+- payments2
+- personal-finance-topup
+- pf
+- pin
+- pms
+- pms-scheduler
+- pullimage
+- push-notification
+- redis
+- reem
+- referral-management
+- rib-revamp
+- singleclickjira
+- sms-console
+- spring-auto-scale-sample
+- statistics-service
+- statisticsweb
+- subscription
+- tms
+- transaction-logging
+- transaction-logging-listener
+- twistlock
+- uaepass-integration
+- utility-service
+- wps-integration
+deviceops:
+- otps
+- party-service
+- cds
+- redis
+deviceops-scheduler:
+- cds
+- redis
+digital-wallet:
+- cds
+- redis
+directory:
+- cds
+directory-service:
+- cds
+ebc-onboarding:
+- geny-accounts-service
+- geny-cards-service
+- geny-fidor-service
+- kyc
+- otps
+- party-service
+- accounts-service
+- cards-service
+enquiry:
+- accountops
+- cardops
+- compliance
+- otps
+- partyops
+- utility-service
+- accounts-service
+- cards-service
+- cds
+- kyc
+- party-service
+- redis
+finance-facade:
+- cds
+- covered-card
+- kyc
+finance-service:
+- accounts-service
+- cds
+- file-upload
+- kyc
+- mdm
+- partyops
+- redis
+- utility-service
+financeops:
+- cds
+- file-upload
+- kyc
+- mdm
+- otps
+- partyops
+- utility-service
+- accountops
+- redis
+fund-transfer:
+- banking-charges
+- bms
+- cds
+- kyc
+- otps
+- partyops
+- payments-scheduler
+- tms
+geny-accounts-service:
+- cds
+geny-cards-service:
+- cds
+- geny-fidor-service
+- redis
+geny-courier-service:
+- file-upload
+geny-onboarding:
+- accounts-service
+- cards-service
+- cds
+- compliance
+- file-upload
+- geny-accounts-service
+- geny-cards-service
+- ics
+- icservice
+- kyc
+- oauth
+- otps
+- pin
+geny-party-service:
+- geny-fidor-service
+- kyc
+geny-personal-finance:
+- cds
+- finance-service
+- kyc
+- mdm
+- pf
+genz:
+- accountops
+- accounts-service
+- cds
+- kyc
+- oauth
+- onboarding
+- party-service
+- partyops
+- redis
+- referral-management
+- utility-service
+genz-notification:
+- cds
+- kyc
+- redis
+genz-notification-:
+- kyc
+- redis
+goal-management:
+- accountops
+- cds
+- payments2
+- redis
+icc-integration:
+- tms
+ics:
+- cds
+- file-upload
+- onboarding-v2
+- otps
+- partyops
+- redis
+icservice:
+- cds
+- file-upload
+- onboarding-v2
+- otps
+- partyops
+ipo:
+- cds
+- otps
+- redis
+kyc:
+- cards-service
+- cds
+- compliance
+- enquiry
+- file-upload
+- kyc
+- mdm
+- oauth
+- otps
+- party-service
+- redis
+- subscription
+kyc-ab:
+- cds
+- compliance
+- file-upload
+- mdm
+- party-service
+kyc-devops-ocp:
+- mdm
+kyc-remediation:
+- cards-service
+- cds
+- compliance
+- file-upload
+- kyc
+- mdm
+- otps
+- party-service
+lune-integration:
+- accountops
+- cds
+non-individual-kyc-remediation:
+- compliance
+- party-service
+non-resident-compliance:
+- cards-service
+- kyc
+- non-resident-kyc-remediation
+- otps
+- push-notification
+non-resident-kyc-remediation:
+- compliance
+- file-upload
+- kyc
+- non-resident-compliance
+non-uae-banking:
+- cds
+oauth:
+- kyc
+- otps
+onb-scheduler:
+- otps
+onboarding:
+- accounts-service
+- cards-service
+- cds
+- compliance
+- enquiry
+- file-upload
+- genz
+- ics
+- icservice
+- kyc
+- oauth
+- otps
+- pin
+- redis
+- utility-service
+onboarding-v2:
+- accountops
+- cards-service
+- cds
+- compliance
+- file-upload
+- ics
+- icservice
+- kyc
+- oauth
+- otps
+- pin
+- uaepass-integration
+- utility-service
+operational-service:
+- file-upload
+os-adib-insights:
+- cds
+osadibinsights:
+- cds
+party-service:
+- cds
+- kube-system
+- kyc
+- redis
+partyops:
+- accountops
+- cds
+- kyc
+- redis
+payments-scheduler:
+- cds
+- otps
+- payments2
+- redis
+- tms
+payments-service:
+- bms
+- cds
+- otps
+- redis
+payments2:
+- banking-charges
+- bms
+- cds
+- kyc
+- otps
+- partyops
+- payments-scheduler
+- redis
+- tms
+- transaction-logging
+personal-finance-topup:
+- cds
+- deviceops
+- enquiry
+- file-upload
+- finance-service
+- kyc
+- mdm
+- otps
+- utility-service
+pf:
+- cds
+- deviceops
+- file-upload
+- finance-service
+- kyc
+- mdm
+- otps
+- pin
+- utility-service
+pms:
+- cds
+- redis
+pms-scheduler:
+- cds
+- redis
+product-management-scheduler:
+- cds
+push-notification:
+- cds
+- otps
+- redis
+- tms
+redis:
+- redis
+referral-management:
+- cds
+- genz
+- kyc
+- redis
+statisticsweb:
+- statistics-service
+subscription:
+- accountops
+- cardops
+- cards-service
+- cds
+- kyc
+tms:
+- cds
+- redis
+transaction-logging:
+- accountops
+- bms
+- cds
+- kyc
+- redis
+transaction-logging-listener:
+- bms
+- cds
+- redis
+uaepass-integration:
+- cds
+- file-upload
+utility-service:
+- financeops
+- utility-service
