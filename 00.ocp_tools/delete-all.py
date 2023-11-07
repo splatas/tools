@@ -1,18 +1,11 @@
 #!/usr/bin/python3
-
-#######################################################################
-# Python program to delete objects on OCP cluster
-#
-# WARNING: you must uncomment final command to execute deletions
-# Prerequisites: You must be logged in a OCP Cluster (oc login ..)
-#
-#######################################################################
-
 import yaml, os, subprocess
 
 print('Starting...')
 to_delete = []
 
+os.system('oc get dc -o yaml > tmpDeploymentConfig')
+os.system('oc get deployment -o yaml > tmpDeployment')
 os.system('oc get pods -o yaml > tmpPods')
 os.system('oc get svc -o yaml > tmpSvc')
 os.system('oc get bc -o yaml > tmpBC')
@@ -21,7 +14,7 @@ os.system('oc get is -o yaml > tmpImage')
 os.system('oc get build -o yaml > tmpBuild')
 
 #print(open('tmpRoute', 'r').read())
-# ImageStream
+# Image
 with open('tmpImage', 'r') as f:
     parsed = yaml.safe_load(f)
 
@@ -87,12 +80,31 @@ for item in parsed['items']:
         #print('\t', item['metadata']['name'])
         continue 
 
+#DeploymentConfig
+with open('tmpDeploymentConfig', 'r') as f:
+    parsed = yaml.safe_load(f)
+
+print("DeploymentConfig:")
+for item in parsed['items']:
+    if item['metadata']['name'] != ['']:
+        to_delete.append('dc/'+ item['metadata']['name'])
+        #print('\t', item['metadata']['name'])
+        continue 
+
+print("Deployments:")
+for item in parsed['items']:
+    if item['metadata']['name'] != ['']:
+        to_delete.append('deployment/'+ item['metadata']['name'])
+        #print('\t', item['metadata']['name'])
+        continue 
+
+# Deleting artifacts
 print("\nObjetos a eliminar:")
 for item in to_delete:
     deleteCommand = 'oc delete '+ item
-    print('Running: ' + deleteCommand)
+    print(deleteCommand)
     #######################################################
-    # UNCOMMENT THE FOLLOWING COMMAND TO EXECUTE DELETIONS:
+    # UNCOMMENT THE FOLLOWING COMMAND TO RUN DELETE COMMAND:
     # os.system(deleteCommand)
     #######################################################
     
